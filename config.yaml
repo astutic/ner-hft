@@ -1,0 +1,11 @@
+train:
+  cmd: python3 train.py
+  type: cmd
+  input: data/train.conll
+  output: stdout
+eval:
+  cmd: python3 evaluate.py
+  type: service
+  input: tcp::7707
+  output: tcp::7707
+  
