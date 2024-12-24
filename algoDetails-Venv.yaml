@@ -10,7 +10,7 @@ Details:
     - MODEL_NAME=bert-base-cased
 AlgoFrom: Git
 AlgoDetails:
-  Path: [GIT_REPO_URL]
+  Path: https://github.com/astutic/ner-hft.git
   Branch: main
   Auth: None
   Run: train.py
