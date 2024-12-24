@@ -1,0 +1,21 @@
+Name: HuggingFace NER
+Version: 1.0
+Owner: Astutic AI
+DataFormat: CoNLL2003
+RunOn: Python Venv
+Details:
+  Address: localhost:7707
+  Port: 7707/tcp
+  Env:
+    - MODEL_NAME=bert-base-cased
+AlgoFrom: Git
+AlgoDetails:
+  Path: [GIT_REPO_URL]
+  Branch: main
+  Auth: None
+  Run: train.py
+  AlgoOutput:
+    - models
+  RestoreOutput: true
+  Logs:
+    - parse_ner.log
