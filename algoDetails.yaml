@@ -1,0 +1,29 @@
+Name: HuggingFace NER
+Version: 1.0
+Owner: Astutic AI
+DataFormat: CoNLL2003
+RunOn: Docker
+Details:
+  Image: false
+  Port: 7707/tcp
+  HostIP: 0.0.0.0
+  Debug: false
+  DockerHost: localhost
+  DockerHostPort: 2375
+  Runtime: nvidia
+  BuildArgs: 
+    - CUDAVERSION=11.4.2
+  Env:
+    - MODEL_NAME=bert-base-cased
+AlgoFrom: Git
+AlgoDetails:
+  Path: https://github.com/astutic/ner-hft/
+  Branch: main
+  Auth: None
+  DockerFilePath: Dockerfile
+  ConfigPath: config.yaml
+  AlgoOutput:
+    - models
+  RestoreOutput: true
+  Logs:
+    - parse_ner.log
