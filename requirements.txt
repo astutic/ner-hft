@@ -1,8 +1,4 @@
-torch>=2.0.0
-transformers>=4.30.0
-datasets>=2.12.0
-seqeval>=1.2.2
-numpy>=1.24.3
-pandas>=2.0.2
-flask>=2.0.0
+torch==2.0.1
+transformers==4.30.0
+numpy==1.24.3
 winner>=0.0.1.1
